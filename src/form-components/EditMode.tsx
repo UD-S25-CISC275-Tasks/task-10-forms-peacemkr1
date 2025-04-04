@@ -19,9 +19,10 @@ export function EditMode(): React.JSX.Element {
                 }}
             />
             {editMode ? (
-                <Form.Group controlId="formUserInfo">
-                    <Form.Label>Name:</Form.Label>
+                <Form.Group>
+                    <Form.Label htmlFor="name-input">Name:</Form.Label>
                     <Form.Control
+                        id="name-input"
                         type="text"
                         value={name}
                         onChange={(e) => {
@@ -30,6 +31,7 @@ export function EditMode(): React.JSX.Element {
                     />
                     <Form.Check
                         type="checkbox"
+                        id="student-checkbox"
                         label="Student?"
                         checked={isStudent}
                         onChange={(e) => {
