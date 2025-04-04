@@ -12,7 +12,6 @@ export function d6(): number {
 }
 
 export function TwoDice(): React.JSX.Element {
-<<<<<<< HEAD
     // Initial dice values that are not the same
     const [left, setLeft] = useState<number>(1);
     const [right, setRight] = useState<number>(2);
@@ -48,7 +47,4 @@ export function TwoDice(): React.JSX.Element {
             <div>{renderResult()}</div>
         </div>
     );
-=======
-    return <div>Two Dice</div>;
->>>>>>> origin/task-forms
 }
