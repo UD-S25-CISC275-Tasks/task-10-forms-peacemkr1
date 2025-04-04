@@ -32,8 +32,8 @@ export function EditMode(): React.JSX.Element {
                         type="checkbox"
                         label="Student?"
                         checked={isStudent}
-                        onChange={(e) => {
-                            setIsStudent(e.target.checked);
+                        onChange={() => {
+                            setIsStudent(false);
                         }}
                     />
                 </Form.Group>
